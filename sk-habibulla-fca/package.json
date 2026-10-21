@@ -1,0 +1,53 @@
+{
+  "name": "sk-habibulla-fca",
+  "version": "0.2.0",
+  "description": "HR HABIB FCA: Messenger personal AppState login and Facebook Page webhooks for Node.js",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.js",
+      "default": "./index.js"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "src/",
+    "examples/",
+    "README.md",
+    "LICENSE",
+    "START-HERE-BN.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check index.js && node --check examples/personal-bot.js && node --check src/client.js && node --check src/webhook.js && node --check src/http.js",
+    "prepublishOnly": "npm run check && npm test"
+  },
+  "keywords": [
+    "fca",
+    "facebook",
+    "messenger",
+    "messenger-bot",
+    "messenger-api",
+    "page",
+    "webhook",
+    "appstate",
+    "mqtt",
+    "personal-account",
+    "goatbot"
+  ],
+  "license": "MIT",
+  "author": "SK Habibulla",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@dongdev/fca-unofficial": "^4.0.3"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "description": "Example bot; configure environment and run node bot.js",
+  "scripts": {"start": "node bot.js"}
+}
